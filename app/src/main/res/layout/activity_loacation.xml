@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LoacationActivity">
+
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:singleLine="true"
+        android:textSize="26sp"
+        android:text="Ваше местоположение"
+        android:textColor="@color/black"
+        />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        tools:ignore="MissingConstraints">
+    </com.google.android.gms.maps.MapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="66sp"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="34sp"
+            android:text="Погода"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints"
+            />
+        <TextView
+            android:id="@+id/textViewWeather"
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonExit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="120sp"
+                android:layout_height="60sp"
+                android:layout_marginTop="22sp"
+                android:layout_marginRight="12sp"
+                android:background="@color/teal_200"
+                android:text="Назад"
+                app:icon="@drawable/cast_ic_notification_rewind" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

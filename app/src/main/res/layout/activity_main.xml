@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10sp"
+        android:hint="Название">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textName"
+            android:layout_width="200sp"
+            android:layout_height="match_parent">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10sp"
+        android:hint="Калории">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textCalories"
+            android:layout_width="200sp"
+            android:layout_height="match_parent"
+            android:inputType="number">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300sp"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10sp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textConsist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:lines="10"
+            android:hint="Состав">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10sp"
+        android:layout_height="60sp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonCamera"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80sp"
+            android:backgroundTint="@color/teal_200"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_camera"
+            app:fabSize="normal"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonStorage"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130sp"
+            android:backgroundTint="@color/teal_700"
+            android:clickable="true"
+            android:src="?android:attr/actionModeFindDrawable"
+            app:fabSize="normal"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="340sp"
+        android:layout_height="260sp"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/myImageViewText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:text="Сделайте фото или загрузите с устройства"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6sp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_200"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_add"
+            app:fabSize="normal">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/buttonLocation"
+                android:layout_width="150sp"
+                android:layout_height="60sp"
+                android:textSize="14sp"
+                android:text="геолокация"
+                android:layout_marginLeft="20sp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/buttonHistory"
+                android:layout_width="150sp"
+                android:layout_height="60sp"
+                android:textSize="14sp"
+                android:text="История"
+                android:layout_marginLeft="70sp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
